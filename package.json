@@ -4,7 +4,7 @@
   "description": "A Component for feature flags and including conditional code based on a configuration",
   "main": "index.js",
   "scripts": {
-    "prepublish": "tsc",
+    "prepublish": "tsc"
 
   },
   "repository": {
@@ -24,6 +24,5 @@
   "homepage": "https://github.com/RicardoD7I/ng2-feature-flag#readme",
   "devDependencies" :{
       "typescript": "2.0.0"
-
   }
 }
