@@ -16,6 +16,7 @@
     "angular2",
     "feature-flags"
   ],
+
   "author": "Ricardo D. Vella",
   "license": "MIT",
   "bugs": {
