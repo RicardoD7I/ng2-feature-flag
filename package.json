@@ -1,14 +1,15 @@
 {
   "name": "ng2-feature-flag",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A Component for feature flags and including conditional code based on a configuration",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prepublish": "tsc",
+
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/RicardoD7I/ng2-ng2-feature-flag.git"
+    "url": "git+https://github.com/RicardoD7I/ng2-feature-flag.git"
   },
   "keywords": [
     "ng2",
@@ -18,7 +19,11 @@
   "author": "Ricardo D. Vella",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/RicardoD7I/ng2-ng2-feature-flag/issues"
+    "url": "https://github.com/RicardoD7I/ng2-feature-flag/issues"
   },
-  "homepage": "https://github.com/RicardoD7I/ng2-ng2-feature-flag#readme"
+  "homepage": "https://github.com/RicardoD7I/ng2-feature-flag#readme",
+  "devDependencies" :{
+      "typescript": "2.0.0"
+
+  }
 }
