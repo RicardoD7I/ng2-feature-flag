@@ -1,0 +1,15 @@
+#################
+## Misc
+#################
+**/.DS_Store
+node_modules/*
+npm-debug.log
+*.js
+*.map
+*.d.ts
+!make.js
+
+# OS generated files
+Thumbs.db
+.DS_Store
+.idea

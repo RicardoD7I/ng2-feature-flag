@@ -1,10 +1,14 @@
+
+
+
+
 import { Component, Input, OnInit, OnChanges,DoCheck, Inject, KeyValueDiffers  } from '@angular/core';
 
 /**
  * This class represents the navigation bar component.
  */
 @Component({
-  moduleId: module.id,
+//  moduleId: module.id,
   selector: 'feature-flag',
   template: '<ng-content *ngIf="condition"></ng-content>'
 })
@@ -43,8 +47,9 @@ export class FeatureFlagComponent implements OnInit, OnChanges, DoCheck {
     this.calculateConditions();
   }
 
-  ngOnChanges(changes: { [propName: string]: SimpleChange }) {
-         console.log('ngOnChanges = ', changes['lapsData']);
+  ngOnChanges() {
+// changes: { [propName: string]: SimpleChange }
+//  console.log('ngOnChanges = ', changes['lapsData']);
      }
 
 

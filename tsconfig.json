@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es5",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "inlineSourceMap": true,
+    "inlineSources": true,
+    "declaration": true,
+    "moduleResolution": "node",
+    "types": [
+  
+    ],
+    "lib": ["es2015", "dom"]
+  },
+  "lib": ["es2015", "dom"],
+  "files": [
+		"src/feature-flag.component.ts",
+		"ng2-feature-flag.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
