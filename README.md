@@ -1,6 +1,11 @@
 # ng2-featureFlags
 
 
+[![Join the chat at https://gitter.im/ng2-feature-flag/Lobby](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/ng2-feature-flag/Lobby?utm_source=share-link&utm_medium=link&utm_campaign=share-link)
+
+
+
+
 A 'feature flag' (or Feature Toggle) is the ability to turn features (sub-sections) of your application on/off with some conditions.
 The Feature that is being wrapped around the <feature-flag> tag is not rendered.
 This module provides 3 possible variables to turn on/off a feature: language, country and userRole. 
