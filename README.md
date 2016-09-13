@@ -1,14 +1,15 @@
 # ng2-featureFlags
 
-This is public beta.
 
-The project will contain a component for feature flags in Angular 2.
+A 'feature flag' (or Feature Toggle) is the ability to turn features (sub-sections) of your application on/off with some conditions.
 The Feature that is being wrapped around the <feature-flag> tag is not rendered.
+This module provides 3 possible variables to turn on/off a feature: language, country and userRole. 
+You can use the conditions that you need, and it will map this to the configuration file.
+
+The module was tested with Angular2 RC6.
 
 Please, let me know about if this module is usefull, any feedback is welcome. I.e: new attributes for the conditions.
-Todos:
-- unit tests
-- build system with gulp
+If you are integrating this in your project, I will be very happy to help with that.
 
 
 # Usage
@@ -71,3 +72,12 @@ export const Features = {
   }
 };
 ```
+
+#Install from npm
+```
+npm install ng2-feature-flag --save
+```
+
+#Todos:
+- unit tests
+- build system with gulp
