@@ -1,12 +1,10 @@
 {
   "name": "ng2-feature-flag",
-  "version": "0.0.1",
+  "version": "0.0.8",
   "description": "A Component for feature flags and including conditional code based on a configuration",
   "main": "ng2-feature-flag.js",
   "scripts": {
-    "prepublish": "tsc -p tsconfig.json",
-	"postinstall": "typings install"
-
+    "prepublish": "tsc -p tsconfig.json"
   },
   "repository": {
     "type": "git",
@@ -28,7 +26,8 @@
       "typescript": "2.0.0"
   },
   "peerDependencies" : {
-    "@angular/core": "^2.0.0-rc.6"
-    }
+    "@angular/core": "^2.0.0-rc.6",
+	"@angular/platform-browser": "^2.0.0-rc.6"
+  }
 
 }

@@ -6,9 +6,7 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "sourceMap": true,
-    "noEmitHelpers": true,
     "noImplicitAny": true,
-    "declaration": false,
 	"suppressImplicitAnyIndexErrors" : true
   },
   "exclude": [
@@ -19,3 +17,4 @@
 	     "node_modules/typescript/lib/lib.es6.d.ts"
   ]
 }
+
