@@ -37,7 +37,7 @@ You can use also: country, userRole and language, this should map against the pr
 ```javascript
 
 // main module
-import { FeatureFlagModule } from '/feature-flag/index';
+import { FeatureFlagModule } from 'ng2-feature-flag/ng2-feature-flag';
 
 // feature flags configuration
 import {Features} from './config/features.config';
