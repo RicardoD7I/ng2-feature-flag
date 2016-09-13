@@ -1,24 +1,21 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
     "target": "es5",
+    "module": "commonjs",
+    "moduleResolution": "node",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "inlineSourceMap": true,
-    "inlineSources": true,
-    "declaration": true,
-    "moduleResolution": "node",
-    "types": [
-  
-    ],
-    "lib": ["es2015", "dom"]
+    "sourceMap": true,
+    "noEmitHelpers": true,
+    "noImplicitAny": true,
+    "declaration": false,
+	"suppressImplicitAnyIndexErrors" : true
   },
-  "lib": ["es2015", "dom"],
-  "files": [
-		"src/feature-flag.component.ts",
-		"ng2-feature-flag.ts"
-  ],
   "exclude": [
     "node_modules"
+  ],
+  "files": [
+	"./ng2-feature-flag.ts",
+	     "node_modules/typescript/lib/lib.es6.d.ts"
   ]
 }
