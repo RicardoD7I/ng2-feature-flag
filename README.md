@@ -1,4 +1,4 @@
-# ng2-featureFlags
+# ng2-feature-flag [![npm version](https://badge.fury.io/js/ng2-feature-flag.svg)](http://badge.fury.io/js/ng2-feature-flag)
 
 
 [![Join the chat at https://gitter.im/ng2-feature-flag/Lobby](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/ng2-feature-flag/Lobby?utm_source=share-link&utm_medium=link&utm_campaign=share-link)
