@@ -86,3 +86,4 @@ npm install ng2-feature-flag --save
 #Todos:
 - unit tests
 - build system with gulp
+- implement better change detection strategy

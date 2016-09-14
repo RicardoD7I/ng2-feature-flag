@@ -7,14 +7,16 @@
     "experimentalDecorators": true,
     "sourceMap": true,
     "noImplicitAny": true,
-	"suppressImplicitAnyIndexErrors" : true
+	"suppressImplicitAnyIndexErrors" : true,
+	    "declaration": true
+
   },
   "exclude": [
     "node_modules"
   ],
   "files": [
 	"./ng2-feature-flag.ts",
-	     "node_modules/typescript/lib/lib.es6.d.ts"
+	"node_modules/typescript/lib/lib.es6.d.ts"
   ]
 }
 

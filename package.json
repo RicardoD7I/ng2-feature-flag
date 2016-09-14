@@ -1,6 +1,6 @@
 {
   "name": "ng2-feature-flag",
-  "version": "0.0.9",
+  "version": "0.0.13",
   "description": "A Component for feature flags and including conditional code based on a configuration",
   "main": "ng2-feature-flag.js",
   "scripts": {

@@ -1,28 +1,26 @@
-
-
-
-
-import { Component, Input, OnInit, OnChanges,DoCheck, Inject, KeyValueDiffers  } from '@angular/core';
+import { Component, Input, OnInit, DoCheck, Inject, KeyValueDiffers  } from '@angular/core';
 
 /**
  * This class represents the navigation bar component.
  */
 @Component({
-//  moduleId: module.id,
   selector: 'feature-flag',
   template: '<ng-content *ngIf="condition"></ng-content>'
 })
 
 // TODO2: consider events for dynamic changes of properties on   @Inputs
-export class FeatureFlagComponent implements OnInit, OnChanges, DoCheck {
+export class FeatureFlagComponent implements OnInit, DoCheck {
 
+  // ID of the feature to feature-flag
   @Input() feature: string;
+  
+  // Properties for condition checks
   @Input() country: string;
   @Input() language: string;
   @Input() userRole: string;
 
+  // property for comparison of all the conditions
   differ: any;
-
 
   // if this attribute is true, shows the feature
   condition: boolean = false;
@@ -45,29 +43,24 @@ export class FeatureFlagComponent implements OnInit, OnChanges, DoCheck {
   ngOnInit() {
     // do all the conditions calculations
     this.calculateConditions();
+	this.differ.diff({
+        language: this.language,
+        country : this.country,
+        userRole : this.userRole
+      });
   }
-
-  ngOnChanges() {
-// changes: { [propName: string]: SimpleChange }
-//  console.log('ngOnChanges = ', changes['lapsData']);
-     }
 
 
      ngDoCheck() {
-   		var changes = this.differ.diff({
+   	 var changes = this.differ.diff({
         language: this.language,
         country : this.country,
         userRole : this.userRole
       });
 
-
    		if(changes) {
-   			console.log('changes detected');
-        this.calculateConditions()
-
-   		} else {
-   			console.log('nothing changed');
-   		}
+			this.calculateConditions()
+		} 
    	}
 
 
